@@ -30,7 +30,8 @@ def on_message(client, userdata, message):
  
 client = mqtt.Client("Digital Twin")
 client.on_message = on_message 
-client.connect("19990da2823846f68376aadb01a9948a.s1.eu.hivemq.cloud", 8883) 
+#client.connect("19990da2823846f68376aadb01a9948a.s1.eu.hivemq.cloud", 8884) 
+client.connect("test.mosquitto.org", 1883)
 client.subscribe("transistor/#") 
 client.loop_start()
 
@@ -56,25 +57,24 @@ app.layout = html.Div([
     Output('live-update-graph', 'figure'), 
     [Input('interval-component', 'n_intervals')] 
 ) 
-def update_graph_live(n): 
-    global data 
-    df = pd.DataFrame(data) 
-    if not df.empty: 
-        # Predict using the model for future behavior 
-        X = df[['V_GS']].values[-1].reshape(1, -1) 
-        predicted_I_D = model.predict(X) 
-        df['Predicted_I_D'] = predicted_I_D 
-  
- 
-        # Create traces for actual and predicted I_D 
-        trace1 = go.Scatter(x=df['V_GS'], y=df['I_D'], mode='lines+markers', name='Actual I_D') 
-        trace2 = go.Scatter(x=df['V_GS'], y=df['Predicted_I_D'], mode='lines', name='Predicted I_D', line=dict(dash='dash')) 
- 
-        return { 
-            'data': [trace1, trace2], 
-            'layout': go.Layout(title='Real-Time Transistor Behavior', xaxis={'title': 'V_GS (V)'}, yaxis={'title': 'I_D (A)'}) 
-        } 
-    return {'data': [], 'layout': go.Layout(title='Waiting for Data...')} 
+def update_graph_live(n):
+    global data
+    df = pd.DataFrame(data)
+    if not df.empty:
+        # Predict using the model for future behavior
+        X = df[['V_GS', 'I_D']].values[-1].reshape(1, -1)  # Include both features
+        predicted_I_D = model.predict(X)[0][0]  # Extract scalar prediction
+        df['Predicted_I_D'] = model.predict(df[['V_GS', 'I_D']].values)
+
+        # Create traces for actual and predicted I_D
+        trace1 = go.Scatter(x=df['V_GS'], y=df['I_D'], mode='lines+markers', name='Actual I_D')
+        trace2 = go.Scatter(x=df['V_GS'], y=df['Predicted_I_D'], mode='lines', name='Predicted I_D', line=dict(dash='dash'))
+
+        return {
+            'data': [trace1, trace2],
+            'layout': go.Layout(title='Real-Time Transistor Behavior', xaxis={'title': 'V_GS (V)'}, yaxis={'title': 'I_D (A)'})
+        }
+    return {'data': [], 'layout': go.Layout(title='Waiting for Data...')}
  
 if __name__ == '__main__': 
     app.run_server(debug=True)
