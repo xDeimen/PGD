@@ -1,0 +1,4 @@
+"Time,MachineStatus,ProductionCount"
+"0,On,100"
+"1,Off,150"
+"2,On,200"
