@@ -1,0 +1,101 @@
+Timestamp,Machine ID,Cycle Time (s),Production Count,Status,Energy Consumption (kWh)
+10/3/2024 8:00,Robot,20,0,Idle,0.5
+10/3/2024 8:10,Part Positioner,11,110,Operational,2.2
+10/3/2024 8:20,Robot,22,120,Operational,2.4
+10/3/2024 8:30,Part Positioner,10,130,Operational,2.6
+10/3/2024 8:40,Robot,24,0,Idle,0.5
+10/3/2024 8:50,Part Positioner,12,150,Operational,2.2
+10/3/2024 9:00,Robot,21,100,Operational,2.4
+10/3/2024 9:10,Part Positioner,11,110,Operational,2.6
+10/3/2024 9:20,Robot,23,0,Idle,0.5
+10/3/2024 9:30,Part Positioner,10,130,Operational,2.2
+10/3/2024 9:40,Robot,20,140,Operational,2.4
+10/3/2024 9:50,Part Positioner,12,150,Operational,2.6
+10/3/2024 10:00,Robot,22,0,Idle,0.5
+10/3/2024 10:10,Part Positioner,11,110,Operational,2.2
+10/3/2024 10:20,Robot,24,120,Operational,2.4
+10/3/2024 10:30,Part Positioner,10,130,Operational,2.6
+10/3/2024 10:40,Robot,21,0,Idle,0.5
+10/3/2024 10:50,Part Positioner,12,150,Operational,2.2
+10/3/2024 11:00,Robot,23,100,Operational,2.4
+10/3/2024 11:10,Part Positioner,11,110,Operational,2.6
+10/3/2024 11:20,Robot,20,0,Idle,0.5
+10/3/2024 11:30,Part Positioner,10,130,Operational,2.2
+10/3/2024 11:40,Robot,22,140,Operational,2.4
+10/3/2024 11:50,Part Positioner,12,150,Operational,2.6
+10/3/2024 12:00,Robot,24,0,Idle,0.5
+10/3/2024 12:10,Part Positioner,11,110,Operational,2.2
+10/3/2024 12:20,Robot,21,120,Operational,2.4
+10/3/2024 12:30,Part Positioner,10,130,Operational,2.6
+10/3/2024 12:40,Robot,23,0,Idle,0.5
+10/3/2024 12:50,Part Positioner,12,150,Operational,2.2
+10/3/2024 13:00,Robot,20,100,Operational,2.4
+10/3/2024 13:10,Part Positioner,11,110,Operational,2.6
+10/3/2024 13:20,Robot,22,0,Idle,0.5
+10/3/2024 13:30,Part Positioner,10,130,Operational,2.2
+10/3/2024 13:40,Robot,24,140,Operational,2.4
+10/3/2024 13:50,Part Positioner,12,150,Operational,2.6
+10/3/2024 14:00,Robot,21,0,Idle,0.5
+10/3/2024 14:10,Part Positioner,11,110,Operational,2.2
+10/3/2024 14:20,Robot,23,120,Operational,2.4
+10/3/2024 14:30,Part Positioner,10,130,Operational,2.6
+10/3/2024 14:40,Robot,20,0,Idle,0.5
+10/3/2024 14:50,Part Positioner,12,150,Operational,2.2
+10/3/2024 15:00,Robot,22,100,Operational,2.4
+10/3/2024 15:10,Part Positioner,11,110,Operational,2.6
+10/3/2024 15:20,Robot,24,0,Idle,0.5
+10/3/2024 15:30,Part Positioner,10,130,Operational,2.2
+10/3/2024 15:40,Robot,21,140,Operational,2.4
+10/3/2024 15:50,Part Positioner,12,150,Operational,2.6
+10/3/2024 16:00,Robot,23,0,Idle,0.5
+10/3/2024 16:10,Part Positioner,11,110,Operational,2.2
+10/3/2024 16:20,Robot,20,120,Operational,2.4
+10/3/2024 16:30,Part Positioner,10,130,Operational,2.6
+10/3/2024 16:40,Robot,22,0,Idle,0.5
+10/3/2024 16:50,Part Positioner,12,150,Operational,2.2
+10/3/2024 17:00,Robot,24,100,Operational,2.4
+10/3/2024 17:10,Part Positioner,11,110,Operational,2.6
+10/3/2024 17:20,Robot,21,0,Idle,0.5
+10/3/2024 17:30,Part Positioner,10,130,Operational,2.2
+10/3/2024 17:40,Robot,23,140,Operational,2.4
+10/3/2024 17:50,Part Positioner,12,150,Operational,2.6
+10/3/2024 18:00,Robot,20,0,Idle,0.5
+10/3/2024 18:10,Part Positioner,11,110,Operational,2.2
+10/3/2024 18:20,Robot,22,120,Operational,2.4
+10/3/2024 18:30,Part Positioner,10,130,Operational,2.6
+10/3/2024 18:40,Robot,24,0,Idle,0.5
+10/3/2024 18:50,Part Positioner,12,150,Operational,2.2
+10/3/2024 19:00,Robot,21,100,Operational,2.4
+10/3/2024 19:10,Part Positioner,11,110,Operational,2.6
+10/3/2024 19:20,Robot,23,0,Idle,0.5
+10/3/2024 19:30,Part Positioner,10,130,Operational,2.2
+10/3/2024 19:40,Robot,20,140,Operational,2.4
+10/3/2024 19:50,Part Positioner,12,150,Operational,2.6
+10/3/2024 20:00,Robot,22,0,Idle,0.5
+10/3/2024 20:10,Part Positioner,11,110,Operational,2.2
+10/3/2024 20:20,Robot,24,120,Operational,2.4
+10/3/2024 20:30,Part Positioner,10,130,Operational,2.6
+10/3/2024 20:40,Robot,21,0,Idle,0.5
+10/3/2024 20:50,Part Positioner,12,150,Operational,2.2
+10/3/2024 21:00,Robot,23,100,Operational,2.4
+10/3/2024 21:10,Part Positioner,11,110,Operational,2.6
+10/3/2024 21:20,Robot,20,0,Idle,0.5
+10/3/2024 21:30,Part Positioner,10,130,Operational,2.2
+10/3/2024 21:40,Robot,22,140,Operational,2.4
+10/3/2024 21:50,Part Positioner,12,150,Operational,2.6
+10/3/2024 22:00,Robot,24,0,Idle,0.5
+10/3/2024 22:10,Part Positioner,11,110,Operational,2.2
+10/3/2024 22:20,Robot,21,120,Operational,2.4
+10/3/2024 22:30,Part Positioner,10,130,Operational,2.6
+10/3/2024 22:40,Robot,23,0,Idle,0.5
+10/3/2024 22:50,Part Positioner,12,150,Operational,2.2
+10/3/2024 23:00,Robot,20,100,Operational,2.4
+10/3/2024 23:10,Part Positioner,11,110,Operational,2.6
+10/3/2024 23:20,Robot,22,0,Idle,0.5
+10/3/2024 23:30,Part Positioner,10,130,Operational,2.2
+10/3/2024 23:40,Robot,24,140,Operational,2.4
+10/3/2024 23:50,Part Positioner,12,150,Operational,2.6
+10/4/2024 0:00,Robot,21,0,Idle,0.5
+10/4/2024 0:10,Part Positioner,11,110,Operational,2.2
+10/4/2024 0:20,Robot,23,120,Operational,2.4
+10/4/2024 0:30,Part Positioner,10,130,Operational,2.6
